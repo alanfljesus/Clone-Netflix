@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+body {
+    max-width: 100vw;
+    width: 100%;
+    background-color: #000;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "container-1"
+        "container-2"
+        "container-3"
+        "container-4"
+        "container-5"
+        "container-6"
+        "container-7";
+}
+
+/* CONTAINER 1 */
+.container-1 {
+    grid-area: container-1;
+    padding: 1.875rem 3.438rem 0 3.438rem;
+    /* configs background */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 43.875rem;
+    border-bottom: 8px solid #222222;
+}
+
+
+.container-1 .top-header .logo-img {
+    max-height: 36px;
+}
+
+.container-1 .top-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-1 .idioma-login {
+    display: flex;
+    gap: 15px;
+}
+
+.container-1 .idioma-login .btn-idiomas {
+    padding: 0 15px 0 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #AAAAAA;
+    height: 36.1875px;
+
+    font-size: 14px;
+
+    border-radius: 4px;
+}
+
+.container-1 .top-header .idioma-login .btn-idiomas .opcao {
+    background-color: #909090;
+}
+
+.container-1 .idioma-login .btn-login {
+    padding: 7px 17px 7px 17px;
+    height: 36.1875px;
+    background-color: #e50914;
+    border: none;
+    min-width: auto;
+    min-height: auto;
+
+    font-size: 16px;
+    color: #fff;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+}
+
+.principal .msg-1 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 165px;
+
+    text-align: center;
+
+    gap: 21px;
+}
+
+.principal h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.principal h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.principal h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+input {
+    padding: 10px 10px 0 10px;
+    height: 60px;
+    width: 450px;
+    border-bottom: 2px solid #FFA00A;
+    outline: none;
+    border: none;
+
+    font-size: 16px;
+    font-family: "Helvetica", Arial, sans-serif;
+}
+
+.input-email {
+    display: flex;
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.enviar-email {
+    background-color: #F40612;
+    color: #fff;
+    border: none;
+    height: 60px;
+    width: 183.625px;
+    min-height: 60px;
+    min-width: 74px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 26px;
+}
+
+
+/* CONTAINER 2 */
+.container-2 {
+    grid-area: container-2;
+    border-bottom: 8px solid #222222;
+
+    max-height: 473px;
+}
+
+.container-2 .text {
+    display: flex;
+    flex-direction: column;
+
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+
+    gap: 20px;
+}
+
+.container-2 .text h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.container-2 .text h2 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.container-2 .text-img-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-2 .img-bg-video {
+    position: relative;
+    z-index: 1;
+}
+
+.container-2 .video-netflix {
+    position: absolute;
+    top: 127%;
+    right: 11%;
+}
+
+
+/* CONTAINER 3 */
+.container-3 {
+    grid-area: container-3;
+    border-bottom: 8px solid #222222;
+
+    max-height: 470px;
+}
+
+/* CONTAINER 4 */
+.container-4 {
+    grid-area: container-4;
+    border-bottom: 8px solid #222222;
+
+    max-height: 543px;
+}
+
+/* CONTAINER 5 */
+.container-5 {
+    grid-area: container-5;
+    border-bottom: 8px solid #222222;
+
+    max-height: 530;
+}
+
+/* CONTAINER 6 */
+.container-6 {
+    grid-area: container-6;
+    border-bottom: 8px solid #222222;
+
+    max-height: 928;
+}
+
+/* CONTAINER 7 */
+.container-7 {
+    grid-area: container-7;
+}
