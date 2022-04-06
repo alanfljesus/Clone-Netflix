@@ -1,4 +1,4 @@
-## Clone Netflix
+## Clone Netflix 50%
 
 <div style="display: inline_block">
   <img align="center" title="HTML5" alt="Alan-HTML" height="30" width="40" src="https://xesque.rocketseat.dev/platform/tech/html5.svg">
